@@ -1,0 +1,25 @@
+easy_admin:
+  entities:
+    Chapter:
+      class: App\Entity\Chapter
+      form:
+        fields:
+          - { property: 'title' }
+          - { property: 'slug' }
+          - { property: 'intro' }
+          - { property: 'outro' }
+    Part:
+      class: App\Entity\Part
+      form:
+        fields:
+          - { property: 'number' }
+          - { property: 'title' }
+          - { property: 'chapter' }
+    Card:
+      class: App\Entity\Card
+      form:
+        fields:
+          - { property: 'number' }
+          - { property: 'title' }
+          - { property: 'content' }
+          - { property: 'part' }
