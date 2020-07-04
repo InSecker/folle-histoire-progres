@@ -30,6 +30,7 @@ class Chapter
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Groups({"chapters"})
      */
     private $id;
 
@@ -42,7 +43,6 @@ class Chapter
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\Regex(pattern="/^[a-z0-9\-]+$/")
-     * @Groups({"chapter", "chapters"})
      */
     private $slug;
 
